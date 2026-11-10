@@ -1,0 +1,190 @@
+/* ===== Brand colors ===== */
+:root {
+  --gold: #d4a62a;
+  --pink: #e0338f;
+  --brown: #3b2418;
+  --cream: #fff8ee;
+}
+
+/* ===== Reset and page defaults ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: var(--cream);
+  color: var(--brown);
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: var(--brown);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 1.5rem;
+  border-bottom: 3px solid var(--gold);
+}
+
+header h1 {
+  color: var(--pink);
+  font-size: 1.4rem;
+}
+
+header h1 span {
+  color: var(--gold);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+nav a {
+  color: var(--gold);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+#hero {
+  background:
+    linear-gradient(rgba(59, 36, 24, 0.72), rgba(59, 36, 24, 0.72)),
+    url("images/banner.jpg") center 60% / cover no-repeat;
+  color: var(--cream);
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
+
+#hero h2 {
+  color: var(--gold);
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  background: var(--pink);
+  color: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1.2rem;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 3rem 1.5rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Service cards ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Makes the last card stretch across the full row */
+.card:last-child {
+  grid-column: 1 / -1;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--brown);
+  color: var(--gold);
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+/* ===== Order form ===== */
+#orderForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#orderForm label {
+  font-weight: bold;
+  margin: 1rem 0 0.3rem;
+}
+
+#orderForm input,
+#orderForm select,
+#orderForm textarea {
+  padding: 0.7rem;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: white;
+}
+
+#orderForm button {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+#orderForm input,
+#orderForm select,
+#orderForm textarea,
+#orderForm button {
+  width: 100%;
+  font-family: inherit;
+}
+
+/* ===== Floating chat button ===== */
+.chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* ===== Logo ===== */
+.logo {
+  display: block;
+  height: 120px;
+  width: auto;
+}
+
+/* ===== Center the header on phones ===== */
+header {
+  justify-content: center;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 0.6rem;
+}
