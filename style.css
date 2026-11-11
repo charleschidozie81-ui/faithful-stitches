@@ -188,3 +188,32 @@ header {
 nav a {
   margin: 0 0.6rem;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery figcaption {
+  margin-top: 6px;
+  font-size: 14px;
+  text-align: center;
+}
